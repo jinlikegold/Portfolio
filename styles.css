@@ -123,6 +123,7 @@ body {
 
   .about-me {
     padding: 20px 60px;
+    text-align: center;
     }
     
 /* Projects - section */
@@ -228,7 +229,7 @@ body {
   #connect {
     width: 100%;
   }
-  
+
     #footer {
       display: flex;
       flex-direction: column;
