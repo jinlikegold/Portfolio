@@ -116,8 +116,7 @@ body {
     }
 
   .about-me {
-    padding: 20px auto;
-    max-width: 80%;
+    padding: 20px 60px;
     }
     
 /* Projects - section */
@@ -248,6 +247,7 @@ body {
         font-size: 18px;
         margin: 0px;
       }
+
       #cat-img img{
         max-height: 300px;
         width: auto;
@@ -256,6 +256,10 @@ body {
       .welcome-container {
         flex-direction: column;
       }
+
+      .about-me {
+        padding: 20px 40px;
+        }
    
       .projects-header, #about, #projects, #connect {
         padding: 10px;
