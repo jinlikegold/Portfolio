@@ -4,6 +4,8 @@
   --gold: #FDA801;
 }
 
+/* Typography */
+
 body {
     font-family: "Proxima-Nova", sans-serif;
     font-size: 18px;
@@ -37,7 +39,9 @@ body {
     #welcome-caption {
       color: var(--dark-blue);
     }
-    
+
+/* Navigation */
+
     header {
       display: flex;
       background-color: #FFFFFF;
@@ -74,7 +78,9 @@ body {
     .nav-link {
       padding: 10px;
     }
-    
+
+/* About Me section*/
+
     .page-sections {
       text-align: center;
     }
@@ -106,13 +112,18 @@ body {
     align-items: center;
    }
 
-    #intro-section {
-      font-size: 16px;
-      font-weight: 400;
-      padding: 20px 60px;
+ .about-me p {
+      display: block;
+      font-size: 18px;
+      font-weight: 600;
+      margin-top: 0;
     }
+
+ .about-me {
+  padding: 20px 60px;
+ }
     
-  /* Projects - section */
+/* Projects - section */
 
     .projects-header {
       text-transform: uppercase;
@@ -194,10 +205,11 @@ body {
   @media (max-width: 1024px) {
     .project-preview {
       top: 60%;
-  }
+    }
 
-  .project-card:hover > .project-preview{
+    .project-card:hover > .project-preview{
     top: 60%;
+    }
   }
 
 /* Connect With Me - section */
@@ -208,38 +220,32 @@ body {
       align-items: center;
     }
     
-  .contact a {
+    .contact a {
     display: block;
-  }
+    }
 
-      .fa-sun {
-      margin: 20px auto;
-      color: var(--gold);
-      --fa-animation-timing: ease;
+    .fa-sun {
+    margin: 20px auto;
+    color: var(--gold);
+    --fa-animation-timing: ease;
     }
     
   
 
-/* Responsiveness */
-
-    @media (min-width:767px) {
-    .project-tile img {
-      width: 100%;
-      height: auto;
-      }
-    }
-    
+/* Smaller Screen Sizes */
     @media (max-width:767px) {
-      h2 {
-        font-size: 18px;
+      .about-me p, p {
+        font-size: 16px;
       }
-      
-      #projects, #sq-projects {
-        padding: 5px;
+
+      #cat-img img{
+        max-height: 250px;
+        width: auto;
+       }
+
+      .welcome-container {
+        flex-direction: column;
       }
-      
-      .project-tile {
-        margin: 0;
-      }
+   
     }
     
