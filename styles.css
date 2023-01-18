@@ -229,12 +229,16 @@ body {
 
 /* Smaller Screen Sizes */
     @media (max-width:767px) {
+
       .about-me p, p {
         font-size: 16px;
       }
-
+      h3 {
+        font-size: 18px;
+        margin: 0px;
+      }
       #cat-img img{
-        max-height: 250px;
+        max-height: 300px;
         width: auto;
        }
 
