@@ -156,7 +156,7 @@ body {
       padding: 20px 40px;
       margin: 10px;
       background-repeat: no-repeat;
-      background-position: center center;
+      background-position: top center;
       background-size: contain;
       height: 300px;
       border: 1px solid var(--gold);
@@ -204,6 +204,16 @@ body {
 
     .project-card:hover > .project-preview{
     top: 60%;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .project-preview {
+      top: 50%;
+    }
+
+    .project-card:hover > .project-preview{
+    top: 50%;
     }
   }
 
