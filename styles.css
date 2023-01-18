@@ -79,6 +79,12 @@ body {
       padding: 10px;
     }
 
+/* Layout */
+
+.page-sections {
+  width: 80%;
+}
+
 /* About Me section*/
 
     #welcome-section {
@@ -219,6 +225,10 @@ body {
 
 /* Connect With Me - section */
 
+  #connect {
+    width: 100%;
+  }
+  
     #footer {
       display: flex;
       flex-direction: column;
