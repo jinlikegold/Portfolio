@@ -189,7 +189,9 @@ body {
       margin-bottom: 20px;
     }
 
-  @media (max-width: 768px) {
+/* remove hover for touchscreens on smaller devices */
+
+  @media (max-width: 1024px) {
     .project-preview {
       top: 60%;
   }
