@@ -1,4 +1,5 @@
 # Portfolio
- My portfolio page - to be updated. Initial design made in FCC's Responsive Web Design certificate course. 
+This is my portfolio page! I completely overhauled the portfolio I made in FCC's Responsive Web Design course.
+
+So far, it's documenting my internship projects. I hope to add more projects soon.
  
- Moving code over from CodePen, please excuse errors while project is in progress.
