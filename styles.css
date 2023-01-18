@@ -112,7 +112,7 @@ body {
       padding: 20px 60px;
     }
     
-    /* Projects - section */
+  /* Projects - section */
 
     .projects-header {
       text-transform: uppercase;
@@ -182,12 +182,22 @@ body {
     }
   
     .project-card:hover > .project-preview {
-      top: 40%;
+      top: 60%;
     }
 
     .github {
       margin-bottom: 20px;
     }
+
+  @media (max-width: 768px) {
+    .project-preview {
+      top: 60%;
+  }
+
+  .project-card:hover > .project-preview{
+    top: 60%;
+  }
+
 /* Connect With Me - section */
 
     #footer {
