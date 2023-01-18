@@ -1,28 +1,41 @@
-p, a {
-    font-family: "helvetica", sans-serif;
+:root {
+  --light-blue: #BDFFFF;
+  --dark-blue: #270BEE;
+  --gold: #FDA801;
+}
+
+body {
+    font-family: "Proxima-Nova", sans-serif;
+    font-size: 18px;
+    text-align: center;
     }
     
     a {
-      color: #7B0461;
+      color: #1e0221;
       font-weight: 600;
-      font-family: "Belleza", sans-serif;
-      font-size: 18px;
+     /* font-family: "Belleza", sans-serif;*/
     }
     
     .nav-link:hover {
-     background-color: #5CE1E6;
+     background-color: var(--light-blue);
     }
     
     h1 {
-      font-size: 26px;
+      font-size: 30px;
+      margin: 0;
     }
     
-    .intro {
+    h2 {
       font-size: 22px;
       font-weight: 500;
-      width: 80%;
-      margin: auto;
-      padding-bottom: 10px;
+    }
+
+    h3 {
+      margin-top: 0;
+    }
+
+    #welcome-caption {
+      color: var(--dark-blue);
     }
     
     header {
@@ -54,84 +67,149 @@ p, a {
       display: inline;
     }
     
+    nav a {
+      color: var(--dark-blue);
+    }
+
     .nav-link {
       padding: 10px;
     }
     
+    .page-sections {
+      text-align: center;
+    }
+
     #welcome-section {
-      background: linear-gradient(#5CE1E6 30%, white);
-      padding: 20vh 20px 30px 20px;
+      background-color: #faf9ff;
+      padding: 0px 20px;
       text-align: center;
       z-index: 1;
     }
+
+   .welcome-container {
+    display: flex;
+    justify-content: center;
+   }
+
+   #cat-img {
+    margin-bottom: -4px;
+   }
+   #cat-img img{
+    max-width: 350px;
+    height: auto;
+   }
+
+   #welcome-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+   }
+
+    #intro-section {
+      font-size: 16px;
+      font-weight: 400;
+      padding: 20px 60px;
+    }
     
+    /* Projects - section */
+
     .projects-header {
       text-transform: uppercase;
       color: white;
     }
     
-    .projects-header, #projects, #sq-projects {
-      background-color: #DF00AE;
+    .projects-header, #about, #projects, #connect {
+      background-color: var(--light-blue);
       padding: 20px;
       text-align: center;
+      width: 100%;
     }
     
-    .project-intro {
+    .intro {
       font-family: "Belleza", sans-serif;
       font-size: 26px;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: var(--gold);
     }
-    
-    #projects, #sq-projects {
+
+    .project-container {
       display: flex;
-      flex-direction: row;
-      justify-content: space-around;
+      justify-content: center; 
       align-items: center;
-      gap: 20px;
       flex-wrap: wrap;
-      padding: 20px auto;
+      gap: 10px;
+      margin: 15px auto;
     }
     
-    .project-tile {
-      width: 40%;
-      max-height: 600px;
-      object-fit: cover;
-     background-color: #5CE1E6; 
-     border: 1px solid black;
-     padding: 10px;
-     border-radius: 10px; 
-    }
-    
-    .project-tile img {
-      width: 100%;
-      height: auto;
-      object-fit: cover;
-    }
-    
-    #sq_projects {
+    .project-card {
       display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 20px 40px;
+      margin: 10px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
+      height: 300px;
+      border: 1px solid var(--gold);
+      overflow: hidden;
+      background-color: var(--light-blue);
+    }
+
+    #ybh-preview {
+      background-image: url("home-page.png");
+    }
+
+    #membership-preview {
+      background-image: url("membership-page.png");
+    }
+
+    .project-preview {
+    position: relative;
+    top: 90%;
+    background-color: var(--gold);
+    padding: 5px 10px;
+    height: 100%;
+    border-radius: 10px;
+    transition: all .5s ease-in-out;
     }
     
-    #connect {
+    .project-preview img {
+      max-width: 100%;  
+      border-radius: 50%; 
+    }
+  
+    .project-card:hover > .project-preview {
+      top: 40%;
+    }
+
+    .github {
+      margin-bottom: 20px;
+    }
+/* Connect With Me - section */
+
+    #footer {
       display: flex;
       flex-direction: column;
       align-items: center;
-      background: linear-gradient(360deg, #5CE1E6, rgba(258, 258, 258, 100%));
-      padding: 10px 10px 30px 10px;
     }
     
-    .connect-link {
-      display: inline;
-      padding: 2vh 5vw;
+  .contact a {
+    display: block;
+  }
+
+      .fa-sun {
+      margin: 20px auto;
+      color: var(--gold);
+      --fa-animation-timing: ease;
     }
     
-    .connect-link:hover {
-      background-color: white;
-    }
-    
-    .links-text {
-      font-weight: 300;
-    }
-    
+  
+
+/* Responsiveness */
+
     @media (min-width:767px) {
     .project-tile img {
       width: 100%;
@@ -153,10 +231,3 @@ p, a {
       }
     }
     
-    /*
-    @media (max-width:400px) {
-      .project-tile img {
-        width: 100%;
-        height: 100px;
-      }
-    } */

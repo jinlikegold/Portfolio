@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jin Zeng's Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Belleza&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://kit.fontawesome.com/a6352c3cc3.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -16,55 +20,86 @@
       </ul>
     </nav>
   </header>
+
   <main>
-    <section id="welcome-section">
-      <h1>Hey, I'm Jin <em>(he/him)</em>.</h1>
-      <h2 class="intro">Coding cat based in San Diego, CA, excited about front-end development and building responsive, accessible websites & apps. I bring a multidiscipinary background in entrepreneurship & design.
-      </h2> 
-        <h2 class="intro">Welcome to my portfolio!</h2>
+    <section class="page-sections" id="welcome-section">
+    <div class="welcome-container">
+      <div id="cat-img">
+        <img src="cat-space.png" alt="blue and gold design of cat in space">
+      </div>
+      <div id="welcome-text">
+        <h1>Hi! I’m Jin (he/him)</h1>
+        <h2>Creative Entrepreneur turned Front End Developer</h2>
+        <h3 id="welcome-caption">& curiouser than a cat in space.</h3>
+      </div>
+    </div>
     </section>
-    <section class="projects-header"><h2 class="project-intro">HTML/CSS Projects</h2></section>
-    <section id="projects">
-      <div class="project-tile">
-        <a href="https://codepen.io/jinlikegold/full/QWaeavQ"><img src="nk-jemisin.png" alt="preview of N.K.Jemisin tribute page">
-        <p>Fantasy Author Tribute Page</p></a>
-      </div>
-      <div class="project-tile">
-        <a href="https://codepen.io/jinlikegold/full/dydYvRm"><img src="quiz.png" alt="preview of quiz survey form page">
-      <p>Throwback Quiz Survey Form</p></a>
-      </div>
-      <div class="project-tile">
-        <a href="https://codepen.io/jinlikegold/full/mdXPqPJ"><img src="crinkle.png" alt="preview of product landing page"><p>Fun Product Landing Page</p></a>
-      </div>
-      <div class="project-tile">
-      <a href="https://codepen.io/jinlikegold/full/gOvgqxx"><img src="accessibility.png" alt="preview of technical documentation page"><p>Accessibility Technical Documentation</p>
-      </a>
-      </div>
-      </section>
-      <section class="projects-header">
-      <h2 class="project-intro">Squarespace Design Projects</h2>
-      </section>
-      <section id="sq-projects">
-      <div class="project-tile">
-      <a href="https://anotherway.work"><img src="another-way.png" alt="preview of Another Way Works business page">
-      <p>Another Way Works - Service Business Website</p></a>
-      </div>
-      <div class="project-tile">
-      <a href="https://momspice.com"><img src="momspice.png" alt="preview of Momspice product landing page">
-      <p>Momspice - Product Business Website</p></a>
-      </div>
+
+    <section>
+    <div id="about">
+      <h2 class="intro">About Me</h2>
+    </div>
+    <div class="page-sections" id="intro-section">
+      <h3>
+        As a true millennial, I got my start learning html as a kid and making my own web1 designs on Neopets and Geocities. Though I went to a tech magnet high school, I jumped ship by going to art school afterwards. But more recently, I started re-learning how to code, and discovered to my surprise that it was actually relaxing and fun for my brain.
+      </h3>
+      <h3>
+        I recently completed an internship where I was the sole web developer for a local organization. I sharpened (and flexed!) my front end skills on the notoriously tricky Squarespace platform, translating wireframes into an entirely custom website. 
+      </h3>
+      <h3>
+        I love discovering new ways to bring delightful designs to life. I’m versed in responsive & accessible web practices. My growing edges (which I’m trodding merrily) are SASS and Javascript, with an eye on learning React. 
+      </h3>
+    </div>
     </section>
-    <section id="connect">
-      <h2>Connect with me! <span class="links-text">(Links open in new tab)</span></h2>
-      <ul>
-        <li class="connect-link"><a id="profile-link" href="https://github.com/jinlikegold" target="_blank">GitHub</a></li>
-        <li class="connect-link"><a id="fcc-link" href="https://www.freecodecamp.org/jinlikegold" target="_blank">FCC Profile</a></li>
-        <li class="connect-link"><a id="linkedin" href="https://www.linkedin.com/in/jinlikegold/" target="_blank">LinkedIn</a></li>
-        <li class="connect-link"><a id="email" href="mailto: jinwithwings@gmail.com" target="_blank">Email</a></li>
-      </ul>
+
+    <section>
+      <div class="page-sections projects-header" id="projects">
+        <h2 class="intro">Portfolio Projects</h2>
+      </div>
+
+      <div class="project-container">
+      <article class="project-card" id="membership-preview">
+        <div class="project-description">
+        </div>
+        <div class="project-preview">
+          <h3>Membership Page for Local Organization</h3>
+          <p>A dynamic services page with an interactive custom plugin.</p>
+          <a href="/membership-project.html">Learn More</a>
+        </div>
+      </article>
+
+        <article class="project-card" id="ybh-preview">
+          <div class="project-heading">
+          </div>
+          <div class="project-preview">
+            <h3>New Home Page for Local Organization</h3>
+            <p>A fresh landing page with uniquely animated CMS components.</p>
+            <a href="/homepage-project.html">Learn More</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="github">
+        <a href="https://github.com/jinlikegold">More Frontend Projects on My Github</a>
+      </div>
+
     </section>
+
   </main>
-  <footer>
+  <footer id="footer" class="page-sections">
+
+      <h2 class="intro" id="connect">Let's Connect</h2>
+
+      <div class="contact">
+        <a href="mailto: jinwithwings@gmail.com">Email Me!</a>
+        <a href="https://www.linkedin.com/in/jinlikegold/">LinkedIn</a>
+        <a href="https://www.instagram.com/jinlikegold/">Instagram</a>
+      </div>
+
+      <i class="fa-solid fa-sun fa-4x fa-spin"></i>
+
+        <p>Copyright 2022 - Jin Zeng</p>
+ 
   </footer>
   </body>
   </html>
