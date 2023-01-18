@@ -81,13 +81,9 @@ body {
 
 /* About Me section*/
 
-    .page-sections {
-      text-align: center;
-    }
-
     #welcome-section {
       background-color: #faf9ff;
-      padding: 0px 20px;
+      padding: 0px;
       text-align: center;
       z-index: 1;
     }
@@ -112,16 +108,16 @@ body {
     align-items: center;
    }
 
- .about-me p {
-      display: block;
-      font-size: 18px;
-      font-weight: 600;
-      margin-top: 0;
+  .about-me p {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 0;
     }
 
- .about-me {
-  padding: 20px 60px;
- }
+  .about-me {
+    padding: 20px 60px;
+    }
     
 /* Projects - section */
 
@@ -134,7 +130,6 @@ body {
       background-color: var(--light-blue);
       padding: 20px;
       text-align: center;
-      width: 100%;
     }
     
     .intro {
@@ -247,5 +242,8 @@ body {
         flex-direction: column;
       }
    
+      .projects-header, #about, #projects, #connect {
+        padding: 10px;
+      }
     }
     
