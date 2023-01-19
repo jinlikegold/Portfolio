@@ -1,6 +1,7 @@
 body {
     font-family: "Proxima-Nova", sans-serif;
     font-size: 18px;
+    margin: 20px;
     }
     
     a {
@@ -8,18 +9,17 @@ body {
       font-weight: 600;
     }
     
-    .nav-link:hover {
+    a:hover {
      background-color: #BDFFFF;
     }
     
     h1 {
       font-size: 30px;
-      margin: 0;
     }
     
     h2 {
       font-size: 22px;
-      font-weight: 500;
+      font-weight: 800;
     }
 
     h3 {
