@@ -135,6 +135,7 @@ body {
     }
     
     .projects-header, #about, #projects, #connect {
+      text-shadow: 2px 2px 2px white;
       background-color: var(--light-blue);
       padding: 20px;
       text-align: center;
