@@ -55,10 +55,9 @@ body {
       z-index: 99999;
     }
     
-    #header-img {
+    #logo {
       position: relative;
       width: 100px;
-      max-width: 20%;
       height: auto;
     }
     
