@@ -111,7 +111,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    align-items: center;
+    align-items: center; 
    }
 
   .about-me p {
@@ -180,6 +180,10 @@ body {
       background-image: url("membership-page.png");
     }
 
+    #twimeow-preview {
+      background-image: url("Twimeow-preview.png")
+    }
+
     .project-preview {
     position: relative;
     top: 90%;
@@ -207,21 +211,14 @@ body {
 
   @media (max-width: 1024px) {
     .project-preview {
-      top: 60%;
+      top: 65%;
     }
 
-    .project-card:hover > .project-preview{
-    top: 60%;
-    }
   }
 
   @media (max-width: 767px) {
     .project-preview {
-      top: 50%;
-    }
-
-    .project-card:hover > .project-preview{
-    top: 50%;
+      top: 60%;
     }
   }
 
@@ -265,8 +262,14 @@ body {
         width: auto;
        }
 
+       #welcome-text{
+        margin-bottom: -180px;
+        z-index: 1;
+        height: 300px;
+       }
+
       .welcome-container {
-        flex-direction: column;
+        flex-direction: column-reverse;
       }
 
       .about-me {
